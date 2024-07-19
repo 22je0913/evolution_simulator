@@ -8,15 +8,15 @@ Peeps peeps;
 Coord Dir::asCoord()
 {
     const Coord DirCoords[9] = {
-        Coord(-1, -1),
-        Coord(0, -1),
-        Coord(1, -1),
-        Coord(-1, 0),
-        Coord(0, 0),
         Coord(1, 0),
+        Coord(1, -1),
+        Coord(0, -1),
+        Coord(-1, -1),
+        Coord(-1, 0),
         Coord(-1, 1),
         Coord(0, 1),
-        Coord(1, 1)};
+        Coord(1, 1),
+        Coord(0, 0)};
     return DirCoords[(uint8_t)dir_val];
 }
 
